@@ -18,5 +18,3 @@ Q3. Describe the process of setting up your ROS workspace and creating the proje
 
 Q4. What challenges did you face while making the robot move in a straight line while turning, and how did you overcome them?
 The robot did not move in a perfect square due to timing and speed differences. I adjusted the linear and angular velocities and durations to improve the path and make it closer to a square.
-
-GenAI usage: ChatGPT was used to help understand ROS concepts and assist with writing the Python control script.
