@@ -1,0 +1,22 @@
+Name: Mingxuan Li
+Student ID: 121025258
+
+Q1. What command did you use to launch the JetAuto robot in Gazebo?
+LIDAR_TYPE=A1 roslaunch jetauto_gazebo worlds.launch
+
+Q2. Which two other launch files were called when you launched worlds.launch?
+1. empty_world.launch
+2. spawn_model.launch
+
+Q3. Describe the process of setting up your ROS workspace and creating the project package.
+1) Created a catkin workspace using mkdir -p ~/catkin_ws/src
+2) Built the workspace using catkin_make
+3) Created the package lab4_jetauto_control with dependencies rospy and geometry_msgs
+4) Wrote a Python node that publishes geometry_msgs/Twist messages to /jetauto_controller/cmd_vel
+5) Ran the node using rosrun while Gazebo was running
+6) Verified the messages using rostopic echo
+
+Q4. What challenges did you face while making the robot move in a straight line while turning, and how did you overcome them?
+The robot did not move in a perfect square due to timing and speed differences. I adjusted the linear and angular velocities and durations to improve the path and make it closer to a square.
+
+GenAI usage: ChatGPT was used to help understand ROS concepts and assist with writing the Python control script.
